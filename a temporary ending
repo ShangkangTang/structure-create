@@ -1,0 +1,19 @@
+#include <stdio.h>
+/* 利用结构体类型计算数学期中期末的平均成绩   */
+int main()
+{
+	 struct grade
+	{
+		int a;/* a为期中成绩*/
+		int b;/* b为期末成绩*/
+		int average;
+	}math;
+	
+	
+	
+	scanf("%d,%d", &math.a, &math.b);/*输入期中和期末成绩*/
+	math.average = (math.a + math.b)/2;
+	printf("%d", math.average);/*打印输出平均成绩*/
+	
+	return 0;
+}
