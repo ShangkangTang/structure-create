@@ -1,0 +1,26 @@
+#include<stdio.h>
+typedef struct persen
+{
+	char name[20];
+	char sex;
+	int age;
+	int height;
+}peop;
+peop per[3]=
+{
+	{"Li",'M',20,175},
+    {"Wa",'F',19,162},
+     {"Zh",'M',20,178},
+};
+int main()
+{
+
+	int i;
+	peop *p;
+	p = per;
+	for (i = 0; i < 3; i++)
+	{
+		printf("%s,%c,%d,%d\n", p->name, p->sex, p->age,p->height);
+		p++;
+	}
+}
