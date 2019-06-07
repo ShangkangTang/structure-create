@@ -1,0 +1,23 @@
+#include<stdio.h>
+typedef struct STUDENT
+{
+	int studentID;
+	char studentname[10];
+	char studentsex[4];
+	int timeofenter;
+}STUD;
+STUD stu[30] =
+{
+	 {1,"令狐冲","男", 2019},
+	 {2,"林平之","男",2018},
+	 {3,"任盈盈","女",2017}
+};
+void main()
+{
+	int i;
+	for (i = 0; i < 3; i++)
+	{
+		printf("%d,%s,%s,%d\n", stu[i].studentID, stu[i].studentname, stu[i].studentsex, stu[i].timeofenter);
+
+	}
+}
